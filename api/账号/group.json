@@ -1,0 +1,10 @@
+{
+  "properties" : { },
+  "id" : "206b54ca92d249e8996491a84b7dae26",
+  "name" : "账号",
+  "type" : "api",
+  "parentId" : "0",
+  "path" : "user",
+  "paths" : [ ],
+  "options" : [ ]
+}

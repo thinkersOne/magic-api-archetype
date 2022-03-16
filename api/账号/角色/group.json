@@ -1,0 +1,10 @@
+{
+  "properties" : { },
+  "id" : "3171fc691d744d1ea1eb0a3e5474b39c",
+  "name" : "角色",
+  "type" : "api",
+  "parentId" : "206b54ca92d249e8996491a84b7dae26",
+  "path" : "role",
+  "paths" : [ ],
+  "options" : [ ]
+}

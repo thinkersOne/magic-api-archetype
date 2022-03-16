@@ -1,0 +1,123 @@
+{
+  "properties" : { },
+  "id" : "5d21f4e0e2324ad986063cbe63d5a391",
+  "script" : null,
+  "groupId" : "3171fc691d744d1ea1eb0a3e5474b39c",
+  "name" : "新增",
+  "createTime" : null,
+  "updateTime" : 1647425185431,
+  "lock" : null,
+  "createBy" : null,
+  "updateBy" : "admin",
+  "path" : "add",
+  "method" : "POST",
+  "parameters" : [ ],
+  "options" : [ ],
+  "requestBody" : "{\n    \"name\": \"超级管理员\"\n}",
+  "headers" : [ ],
+  "paths" : [ ],
+  "responseBody" : "{\n    \"code\": 1,\n    \"message\": \"success\",\n    \"data\": 2,\n    \"timestamp\": 1647425147506,\n    \"executeTime\": 44\n}",
+  "description" : null,
+  "requestBodyDefinition" : {
+    "name" : "",
+    "value" : "",
+    "description" : "",
+    "required" : false,
+    "dataType" : "Object",
+    "type" : null,
+    "defaultValue" : null,
+    "validateType" : "",
+    "error" : "",
+    "expression" : "",
+    "children" : [ {
+      "name" : "name",
+      "value" : "超级管理员",
+      "description" : "",
+      "required" : false,
+      "dataType" : "String",
+      "type" : null,
+      "defaultValue" : null,
+      "validateType" : "",
+      "error" : "",
+      "expression" : "",
+      "children" : [ ]
+    } ]
+  },
+  "responseBodyDefinition" : {
+    "name" : "",
+    "value" : "",
+    "description" : "",
+    "required" : false,
+    "dataType" : "Object",
+    "type" : null,
+    "defaultValue" : null,
+    "validateType" : "",
+    "error" : "",
+    "expression" : "",
+    "children" : [ {
+      "name" : "code",
+      "value" : "1",
+      "description" : "",
+      "required" : false,
+      "dataType" : "Integer",
+      "type" : null,
+      "defaultValue" : null,
+      "validateType" : "",
+      "error" : "",
+      "expression" : "",
+      "children" : [ ]
+    }, {
+      "name" : "message",
+      "value" : "success",
+      "description" : "",
+      "required" : false,
+      "dataType" : "String",
+      "type" : null,
+      "defaultValue" : null,
+      "validateType" : "",
+      "error" : "",
+      "expression" : "",
+      "children" : [ ]
+    }, {
+      "name" : "data",
+      "value" : "2",
+      "description" : "",
+      "required" : false,
+      "dataType" : "Object",
+      "type" : null,
+      "defaultValue" : null,
+      "validateType" : "",
+      "error" : "",
+      "expression" : "",
+      "children" : [ ]
+    }, {
+      "name" : "timestamp",
+      "value" : "1647425147506",
+      "description" : "",
+      "required" : false,
+      "dataType" : "Long",
+      "type" : null,
+      "defaultValue" : null,
+      "validateType" : "",
+      "error" : "",
+      "expression" : "",
+      "children" : [ ]
+    }, {
+      "name" : "executeTime",
+      "value" : "44",
+      "description" : "",
+      "required" : false,
+      "dataType" : "Integer",
+      "type" : null,
+      "defaultValue" : null,
+      "validateType" : "",
+      "error" : "",
+      "expression" : "",
+      "children" : [ ]
+    } ]
+  }
+}
+================================
+
+return db.table('role').insert({ name : body.name});
+return "OK";

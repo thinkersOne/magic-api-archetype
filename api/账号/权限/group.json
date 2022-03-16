@@ -1,0 +1,10 @@
+{
+  "properties" : { },
+  "id" : "988c79e7a9c646c7bd85ef5806d36225",
+  "name" : "权限",
+  "type" : "api",
+  "parentId" : "206b54ca92d249e8996491a84b7dae26",
+  "path" : "permission",
+  "paths" : [ ],
+  "options" : [ ]
+}
