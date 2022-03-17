@@ -12,7 +12,6 @@ magic-api:
   security:
     username: admin # 登录用的用户名
     password: 123456 # 登录用的密码
-
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -41,6 +40,9 @@ spring:
         max-idle: 10
         # 连接池中的最小空闲连接
         min-idle: 0
-
+  # swagger
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
 
 
