@@ -9,4 +9,4 @@ create table user_role_ref
 );
 
 INSERT INTO `magic-api-test`.user_role_ref (user_id, role_id) VALUES (4, 1);
-INSERT INTO `magic-api-test`.user_role_ref (user_id, role_id) VALUES (6, 3);
+INSERT INTO `magic-api-test`.user_role_ref (user_id, role_id) VALUES (3, 3);

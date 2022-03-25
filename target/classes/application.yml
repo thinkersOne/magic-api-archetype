@@ -8,15 +8,41 @@ magic-api:
     #mac用户请改为可读写的目录
     #如果不想存到文件中，可以参考配置将接口信息存到数据库、Redis中（或自定义）
 #    location: D:/data/magic-api
-    location: /Users11/lizhihao/magic-api-archetype
+    location: /Users/lizhihao/magic-api-archetype
   security:
     username: admin # 登录用的用户名
     password: 123456 # 登录用的密码
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/magic-api-test?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+  # redis配置
+  redis:
+    # Redis数据库索引（默认为0）
+    database: 1
+    # Redis服务器地址
+    host: 127.0.0.1
+    # Redis服务器连接端口
+    port: 6379
+    # Redis服务器连接密码（默认为空）
+    # password:
+    # 连接超时时间
+    timeout: 10s
+    lettuce:
+      pool:
+        # 连接池最大连接数
+        max-active: 200
+        # 连接池最大阻塞等待时间（使用负值表示没有限制）
+        max-wait: -1ms
+        # 连接池中的最大空闲连接
+        max-idle: 10
+        # 连接池中的最小空闲连接
+        min-idle: 0
   # swagger
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
-spring:
-  profiles:
-    active: dev
+
 
